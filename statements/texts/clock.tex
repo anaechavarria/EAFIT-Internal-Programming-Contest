@@ -1,0 +1,39 @@
+\begin{problem}{Clock}{standard input}{standard output}{1 second}{clock}
+
+Every school morning Mirko is woken up by the sound of his alarm clock. Since he is a bit forgetful, quite often he leaves the alarm on on Saturday morning too. That's not too bad tough, since he feels good when he realizes he doesn't have to get up from his warm and cozy bed.\\
+He likes that so much, that he would like to experience that on other days of the week too! His friend Slavko offered this simple solution: set his alarm clock 45 minutes early, and he can enjoy the comfort of his bed, fully awake, for 45 minutes each day.\\
+Mirko decided to heed his advice, however his alarm clock uses 24-hour notation and he has issues with adjusting the time. Help Mirko and write a program that will take one time stamp, in 24-hour notation, and print out a new time stamp, 45 minutes earlier, also in 24-hour notation.\\
+
+\textbf{Note:} If you are unfamiliar with 24-hour time notation yourself, you might be interested to know it starts with 0:00 (midnight) and ends with 23:59 (one minute before midnight).
+
+
+\InputFile
+
+The input contains several test cases.\\
+Each test case consists of a line containing two space-separated integers $H$ and $M$ $(0 \leq H \leq 23, 0 \leq M \leq 59)$, the input time in 24-hour notation. $H$ denotes hours and $M$ minutes.\\
+The last line of the input contains two space-separated -1 and should not be processed.
+
+\OutputFile
+
+For each test case, output two integer numbers on a single line separated by a single space --- the time 45 minutes before input time.
+\Example
+
+\begin{example}
+\exmp{
+10 10
+0 30
+23 40
+1 46
+-1 -1
+}{
+9 25
+23 45
+22 55
+1 1
+}%
+\end{example}
+
+Source: \verb|http://www.hsin.hr/coci/archive/2009_2010/contest7_tasks.pdf|
+
+
+\end{problem}

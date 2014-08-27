@@ -1,0 +1,36 @@
+\begin{problem}{Keks}{standard input}{standard output}{2 seconds}{keks1}
+
+Mirko and Slavko are bored at math class again so they came up with new game. Mirko writes down an $n$ digit number, and Slavko’s task is to obtain the largest possible number after having removed exactly $k$ digits.
+
+\InputFile
+
+The input contains several test cases.\\
+The first line of each test case contains two space-separated integers $n$ and $k$ $(1 \leq k < n \leq 1000)$.\\
+The following line contains and $n$ digit number. This number starts with non-zero digit.\\
+The last line of the input contains two space-separated zeros and should not be processed.
+
+\OutputFile
+
+For each test case, output one integer number on a single line --- The largest possible number Slavko can obtain by removing $k$ digits from the given number $n$.
+
+\Example
+
+\begin{example}
+\exmp{
+4 2
+1924
+7 3
+1231234
+10 4
+4177252841
+0 0
+}{
+94
+3234
+775841
+}%
+\end{example}
+
+Source: \verb|http://www.hsin.hr/coci/archive/2011_2012/contest4_tasks.pdf|
+
+\end{problem}

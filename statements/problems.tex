@@ -1,0 +1,69 @@
+\documentclass[12pt,letterpaper,oneside]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{olymp}
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{ulem}
+%\usepackage{expdlist}
+%\usepackage{mfpic}
+%\usepackage{comment}
+
+% Treat all pictures as MPS (metapost) when using PDFLaTeX tool
+\ifx\pdftexversion\undefined
+\else
+ \DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\renewcommand{\contestname}{
+EAFIT Internal Programming Contest - August 15, 2014
+}
+
+% Copied from 'amstex.tex' \bmod declaration
+\def\bdiv{\mskip-\medmuskip\mkern5mu\mathbin{\mathrm{div}}\mkern5mu\mskip-\medmuskip}
+% End of copied text
+
+\renewcommand{\t}{\texttt}
+
+\begin{document}
+
+
+\thispagestyle{empty}
+\begin{center}
+	\LARGE\textbf{\center EAFIT Internal Programming Contest}
+	\LARGE\textbf{\center August 15, 2014}
+	\vspace*{\fill}
+	\LARGE\textbf{\center General comments}
+	\begin{itemize}
+		\item This set contains 6 problems
+		\item The contest is 1 hour and 50 minutes in length
+                \item Scoreboard will be frozen after 80 minutes
+                \item The submissions will not be jugded if sent after 95 minutes (They will be judged at the end of the competition)
+		\item The top teams will compete in the Colombian National Programming Contest
+		\item If programming in Java, remember that the source file name as well as the class containing the Main method should be named as stated in each problem
+		% \item The time limits for Java are 1.5 times the time limits stated in each problem
+		\item Good luck to all!
+		%\item \textbf{Happy \sout{hunger games} programming! And may the odds be ever in your favor}
+	\end{itemize}
+	\quad \\ \quad \\
+	\vspace*{\fill}
+\end{center}
+\newpage
+
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+	\LARGE{Almost blank page}
+\end{center}
+\vspace*{\fill}
+\newpage
+
+\input texts/keks_small.tex
+\input texts/keks_big.tex
+\input texts/stamps.tex
+\input texts/balls_small.tex
+\input texts/balls_big.tex
+\input texts/clock.tex
+
+\end{document}

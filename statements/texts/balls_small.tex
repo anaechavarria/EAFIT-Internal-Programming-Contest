@@ -1,0 +1,38 @@
+\begin{problem}{Balls Game}{standard input}{standard output}{2 seconds}{balls1}
+
+Bob is playing the following game. There are $n$ balls put in a row. Each ball is colored in one of $k$ colors. Initially the row doesn't contain three or more contiguous balls with the same color. Bob has a single ball of color $x$.\\
+He can insert his ball at any position in the row (probably, between two other balls). If at any moment there are three or more contiguous balls of the same color in the row, they are destroyed immediately. This rule is applied multiple times, until there are no more sets of 3 or more contiguous balls of the same color.\\
+For example, if Bob has the row of balls \verb|[black, black, white, white, black, black]| and a white ball, he can insert the ball between two white balls. Thus three white balls are destroyed, and then four black balls become contiguous, so all four balls are destroyed. The row will not contain any ball in the end, so Bob can destroy all 6 balls.\\
+Bob wants to destroy as many balls as possible. You are given the description of the row of balls, and the color of Bob's ball. Help Bob by telling him the maximum number of balls from the row he can destroy.
+
+\InputFile
+
+The input contains several test cases.
+
+The first line of each case contains three integers: $n$ the number of balls in the line $ (1 \leq n \leq 100)$, $k$ the number of different colored balls $(1 \leq k \leq 100)$ and $x$ the color of Bob's ball $(1 \leq x \leq k)$.
+
+The next line contains $n$ space-separated integers $c_1, c_2, \ldots, c_n$. Number $c_i$ means that the i-th ball in the row is of color $c_i$ $(1 \leq c_i \leq k)$.
+
+The last line of the input contains three space-separated zeros and should not be processed.
+
+\OutputFile
+
+For each test case, output one integer number on a single line --- The maximum number of balls Bob can destroy.
+\Example
+
+\begin{example}
+\exmp{
+6 2 2
+1 1 2 2 1 1
+1 1 1
+1
+0 0 0
+}{
+6
+0
+}%
+\end{example}
+
+Source: \verb|http://codeforces.com/problemset/problem/430/B|
+
+\end{problem}
